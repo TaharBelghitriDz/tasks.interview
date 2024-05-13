@@ -13,17 +13,14 @@ export const useFetch: UseFetch = (args) => {
   ) => {
     setIsloading(() => true);
 
-    await fetch(
-      `https://tasks-interview.vercel.app${prms.url ? prms.url : ""}`,
-      {
-        ...prms.requestInit,
-        headers: {
-          ...prms.requestInit.headers,
-          "Content-Type": "application/json",
-        },
-        signal,
-      }
-    )
+    await fetch(`http://localhost:8080${prms.url ? prms.url : ""}`, {
+      ...prms.requestInit,
+      headers: {
+        ...prms.requestInit.headers,
+        "Content-Type": "application/json",
+      },
+      signal,
+    })
       .then((res) => res.json())
       .then((res) => {
         setTimeout(() => {
