@@ -1,0 +1,119 @@
+@import "./variables"
+
+.card-list
+    display: grid
+    grid-template-columns: repeat(2, auto)
+    gap: 5px
+    justify-content: center
+    width: 400px
+    min-width: 400px
+    @media only screen and (max-width: 600px)
+        grid-template-columns: repeat(1, auto)
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        width: 100%
+        min-width: auto
+
+.card
+    background-color: $zinc-800
+    border-radius: 30px
+    width: 200px
+    padding: 10px
+    box-shadow: $shdow
+    @media only screen and (max-width: 600px)
+        width: 90%
+
+    img
+        border-radius: 20px
+        box-shadow: $shdow
+        width: 100%
+
+    .content
+        padding: 10px
+        display: flex
+        flex-direction: column
+
+        .card-icon
+            padding: 5px
+            color: $zinc-100
+            border-radius: 30px
+            cursor: pointer
+            background-color: $zinc-500
+
+        & > *
+            margin: 10px 0
+
+        .details
+            display: flex
+            justify-content: space-between
+            align-items: center
+
+        span
+            font: 900
+        .title
+            color: $zinc-400
+        textarea
+            width: auto
+            color: white
+            background-color: $zinc-700
+            border: none
+            appearance: none
+            border: none
+            outline: none
+            padding: 10px
+            border-radius: 10px
+            resize: vertical
+
+    &:focus
+        outline: none
+        border: none
+        background-color: $zinc-800
+
+        &:active
+            border: none
+            outline: none
+            background-color: $zinc-800
+
+.skelton
+    @include skelton-animaiton
+    *
+        opacity: 0
+
+.card-modal
+    position: relative
+    width: 100%
+    max-width: 1000px
+    .action
+        display: flex
+        flex-direction: column
+        & > *
+            margin: 2px 0
+    button
+        border: none
+        padding: 10px
+        border-radius: 20px
+        cursor: pointer
+        font-size: 18px
+    .laoding
+        position: absolute
+        top: 0
+        border-radius: 30px
+        left: 0
+        height: 100%
+        width: 100%
+        background-color: #05050565
+        display: flex
+        justify-content: center
+        align-items: center
+        .loader
+            @include rotate-animaiton
+
+.btn-red
+    background-color: #bb1414
+    color: #FFF
+
+.btn-green
+    background-color: #1462ac
+    color: #FFF

@@ -1,0 +1,61 @@
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.pagination {
+  position: fixed;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  background-color: rgba(7, 7, 7, 0.4588235294);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  border-radius: 50px;
+  height: 45px;
+  border: 1px solid #a1a1aa;
+  padding: 5px;
+}
+.pagination .btn {
+  background-color: #e4e4e7;
+  color: #18181b;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.pagination .selected {
+  background-color: #1077d8;
+  color: #FFF;
+  scale: 1.1;
+}
+.pagination .hidden {
+  opacity: 0;
+}
+
+.pagination > * {
+  margin: 0 5px;
+}
+.pagination > *:first-child {
+  margin-left: 0;
+}
+.pagination > *:last-child {
+  margin-right: 0;
+}/*# sourceMappingURL=pagination.css.map */

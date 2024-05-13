@@ -1,0 +1,33 @@
+$backgroud: #F1F1F1
+
+$zinc-100: #f4f4f5
+$zinc-200: #e4e4e7
+$zinc-300: #d4d4d8
+$zinc-400: #a1a1aa
+$zinc-500: #71717a
+$zinc-600: #52525b
+$zinc-700: #3f3f46
+$zinc-800: #27272a
+$zinc-900: #18181b
+
+@keyframes pulse
+    0%, 100%
+        opacity: 1
+
+    50%
+        opacity: .5
+
+@mixin skelton-animaiton
+    animation: pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite
+
+@mixin rotate-animaiton
+    animation: spin 2s linear infinite
+
+@keyframes spin
+    from
+        transform: rotate(0deg)
+
+    to
+        transform: rotate(360deg)
+
+$shdow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)

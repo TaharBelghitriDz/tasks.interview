@@ -1,0 +1,89 @@
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.manual-interval {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 200px;
+  color: green;
+  padding: 10px 0px;
+  display: flex;
+}
+.manual-interval button {
+  margin-top: 20px;
+  max-width: 200px;
+  width: 100%;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 18px;
+  background-color: #1462ac;
+  color: #FFF;
+}
+.manual-interval .laoding {
+  position: absolute;
+  top: 0;
+  border-radius: 30px;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(24, 24, 27, 0.2823529412);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.manual-interval .loader {
+  animation: spin 2s linear infinite;
+}
+.manual-interval .value {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 200px;
+}
+.manual-interval input {
+  width: 100%;
+  color: white;
+  max-width: 50px;
+  background-color: #3f3f46;
+  border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+.manual-interval input:focus {
+  outline: none;
+  border: none;
+  background-color: #27272a;
+}
+.manual-interval input:focus:active {
+  border: none;
+  outline: none;
+  background-color: #27272a;
+}/*# sourceMappingURL=manual.interval.css.map */

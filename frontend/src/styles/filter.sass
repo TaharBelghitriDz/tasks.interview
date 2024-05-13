@@ -1,0 +1,69 @@
+@import "./variables"
+
+.filter
+    position: relative
+    width: 100%
+    max-width: 1000px
+    padding: 20px
+
+    .value
+        display: flex
+        justify-content: space-between
+        align-items: center
+        *
+            margin: 20px 10px
+
+        .text
+            width: 100%
+            color: white
+            background-color: $zinc-700
+            border: none
+            appearance: none
+            border: none
+            outline: none
+            padding: 10px
+
+            border-radius: 10px
+            text-align: start
+
+        &:focus
+            outline: none
+            border: none
+            background-color: $zinc-600
+
+            &:active
+                border: none
+                outline: none
+                background-color: $zinc-600
+
+        .check-box
+            border: none
+            height: 30px
+            width: 30px
+            clip-path: circle(46% at 50% 50%)
+
+.triggers-grp-btn
+    margin: 100px 0
+    width: 100%
+    max-width: 250px
+    display: flex
+    flex-direction: column
+    align-content: center
+    justify-content: center
+    @media only screen and (max-width: 600px)
+        max-width: auto
+
+.trigger-btn
+    display: flex
+    align-items: center
+    width: 100%
+    max-width: 250px
+    margin: 5px 0px
+    padding: 10px 0px
+    cursor: pointer
+    border-radius: 15px
+    @media only screen and (max-width: 600px)
+        max-width: auto
+
+.btn-trigger
+    margin: 0px 20px

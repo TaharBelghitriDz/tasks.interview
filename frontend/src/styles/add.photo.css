@@ -1,0 +1,23 @@
+.trigger {
+  border-radius: 30px;
+  display: flex;
+  padding: 10px 0px;
+  margin: 0px 0px;
+  width: 250px;
+  justify-content: space-around;
+  algreenign-items: center;
+  cursor: pointer;
+  color: #FFF;
+}
+
+.green {
+  background-color: rgba(11, 156, 55, 0.5254901961);
+}
+
+.red {
+  background-color: rgba(151, 30, 30, 0.5137254902);
+}
+
+.blue {
+  background-color: rgba(20, 99, 172, 0.4941176471);
+}/*# sourceMappingURL=add.photo.css.map */

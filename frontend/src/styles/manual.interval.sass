@@ -1,0 +1,68 @@
+@import "./variables"
+
+.manual-interval
+    position: relative
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-top: 50px
+    margin-bottom: 200px
+    color: green
+    padding: 10px 0px
+    display: flex
+    button
+        margin-top: 20px
+        max-width: 200px
+        width: 100%
+        border: none
+        padding: 10px
+        border-radius: 20px
+        cursor: pointer
+        font-size: 18px
+        background-color: #1462ac
+        color: #FFF
+    .laoding
+
+        position: absolute
+        top: 0
+        border-radius: 30px
+        left: 0
+        height: 100%
+        width: 100%
+        background-color: #18181b48
+        backdrop-filter: blur(2px)
+        display: flex
+        justify-content: center
+        align-items: center
+
+    .loader
+        @include rotate-animaiton
+    .value
+        width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+        max-width: 200px
+    input
+        width: 100%
+        color: white
+        max-width: 50px
+        background-color: $zinc-700
+        border: none
+        appearance: none
+        border: none
+        outline: none
+        padding: 10px
+        margin: 10px
+        border-radius: 10px
+        text-align: center
+
+        &:focus
+            outline: none
+            border: none
+            background-color: $zinc-800
+
+            &:active
+                border: none
+                outline: none
+                background-color: $zinc-800
