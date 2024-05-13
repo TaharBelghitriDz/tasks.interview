@@ -64,7 +64,7 @@ export const AddUpdatePhotoModal = (props: { update: Photo | null }) => {
       </div>
       <div className="action">
         <button className="btn-green" onClick={save}>
-          save
+          сохранять
         </button>
       </div>
     </div>
